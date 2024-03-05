@@ -1,10 +1,18 @@
+import { Outlet } from "react-router-dom";
 import { Button } from "./components/ui/button";
+import Map from "./Layouts/Map";
+import SideNav from "./Layouts/SideNav";
 
 function App() {
   return (
-    <div className="px-10">
-      <h1 className="text-2xl">Hello Mom</h1>
-      <Button>Click Me</Button>
+    <div className="flex">
+      <div>
+        <SideNav />
+      </div>
+      <Outlet />
+      <div>
+        <Map />
+      </div>
     </div>
   );
 }

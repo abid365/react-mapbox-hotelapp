@@ -5,8 +5,8 @@ import SideNav from "./Layouts/SideNav";
 
 function App() {
   return (
-    <div className="grid lg:grid-cols-12 border border-red-400">
-      <div className="border-2 border-emerald-400 w-fit h-screen">
+    <div className="grid lg:grid-cols-12">
+      <div className="border-2 border-slate-r-400 w-fit h-screen">
         <SideNav />
       </div>
       <div className="col-span-7 scroll-auto w-100 h-auto">

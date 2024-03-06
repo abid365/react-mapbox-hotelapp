@@ -2,9 +2,12 @@ import React from "react";
 import data from "../constants/data";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FaRegStar } from "react-icons/fa";
 import { BsFilter } from "react-icons/bs";
 import { IoIosSearch } from "react-icons/io";
+import { FaStar, FaRegStar, FaWifi } from "react-icons/fa";
+import { TiLocationOutline } from "react-icons/ti";
+import { HiOutlineHome } from "react-icons/hi";
+import Rating from "react-rating";
 import {
   Select,
   SelectContent,
@@ -22,6 +25,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Card } from "@/components/ui/card";
 
 const HomePage = () => {
   return (
@@ -146,6 +150,66 @@ const HomePage = () => {
       </div>
       {/* ---------------------------------- */}
       {/* list of hotels */}
+      <div className="pt-4">
+        <Card className="p-3 flex items-start gap-x-3 relative">
+          <div>
+            <img
+              className="h-32 w-auto rounded-md"
+              src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/01/hotelmemo.jpg"
+              alt=""
+            />
+          </div>
+          <div className="w-full flex-col justify-between">
+            <div>
+              <p className="text-sm font-semibold text-purple-500">
+                Entire apartment rental in collingwood
+              </p>
+              <h1 className="font-sans font-semibold text-slate-800">
+                A stylish 32 sqrft apartment with lala
+              </h1>
+            </div>
+            {/* review */}
+            <div className="flex gap-x-4 items-center pt-5">
+              <Rating
+                placeholderRating={4.5}
+                emptySymbol={<FaRegStar className="text-yellow-300" />}
+                placeholderSymbol={<FaStar className="text-yellow-300" />}
+                fullSymbol={<FaStar className="text-yellow-300" />}
+                readonly
+              />
+              <p className="font-bold text-sm">4.5</p>
+              <p className="text-slate-500 text-sm">202 reviews</p>
+            </div>
+            {/* card footer */}
+            <div className="flex justify-between mt-3">
+              {/* features */}
+              <div className="flex gap-x-4">
+                <div className="flex gap-x-2 items-center text-slate-700 font-semibold">
+                  <TiLocationOutline className="inline-block" />
+                  <span className="text-sm">Collingwood VC</span>
+                </div>
+                <div className="flex gap-x-2 items-center text-slate-700 font-semibold">
+                  <HiOutlineHome className="inline-block" />
+                  <span className="text-sm">1 Bed</span>
+                </div>
+                <div className="flex gap-x-2 items-center text-slate-700 font-semibold">
+                  <FaWifi className="inline-block" />
+                  <span className="text-sm">WiFI</span>
+                </div>
+              </div>
+              {/* price */}
+              <div>
+                <h1 className="text-slate-800 font-bold text-lg">
+                  $540{" "}
+                  <span className="text-slate-400 font-normal text-xs">
+                    AUD total
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
     </div>
   );
 };

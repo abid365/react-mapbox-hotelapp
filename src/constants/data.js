@@ -12,6 +12,7 @@ const data = {
       price: "$540 AUD Total",
       reviews: "202",
       rare: true,
+      img: "https://news.airbnb.com/wp-content/uploads/sites/4/2019/01/hotelmemo.jpg",
     },
     {
       highlight: "Luxury Loft in CBD",
@@ -22,6 +23,7 @@ const data = {
       wifi: true,
       price: "$700 AUD Total",
       reviews: "150",
+      img: "https://a0.muscache.com/im/pictures/miso/Hosting-46561998/original/6e5e43b1-a0a7-4454-b173-db6b22fb36fc.jpeg?im_w=720",
     },
     {
       highlight: "Charming Studio near the Beach",
@@ -32,6 +34,7 @@ const data = {
       wifi: true,
       price: "$450 AUD Total",
       reviews: "120",
+      img: "https://a0.muscache.com/im/pictures/94139818/b5c88637_original.jpg?im_w=720",
     },
     {
       highlight: "Spacious Penthouse with Rooftop Terrace",
@@ -42,6 +45,7 @@ const data = {
       wifi: true,
       price: "$850 AUD Total",
       reviews: "250",
+      img: "https://a0.muscache.com/im/pictures/miso/Hosting-743842922605866703/original/7a13aa3a-3d48-4586-af74-6cfa3a8fc920.jpeg?im_w=720",
     },
     {
       highlight: "Historic Apartment in Fitzroy",
@@ -52,6 +56,7 @@ const data = {
       wifi: true,
       price: "$600 AUD Total",
       reviews: "180",
+      img: "https://a0.muscache.com/im/pictures/miso/Hosting-973508731743200948/original/a4c00ed0-39f2-43e6-ae24-c6a43b232848.jpeg",
     },
     {
       highlight: "Family-Friendly Apartment in Carlton",
@@ -62,6 +67,7 @@ const data = {
       wifi: true,
       price: "$680 AUD Total",
       reviews: "200",
+      img: "https://www.shutterstock.com/image-photo/cozy-holiday-bedroom-traveling-guests-600nw-1705849636.jpg",
     },
   ],
 };

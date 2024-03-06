@@ -6,13 +6,13 @@ import SideNav from "./Layouts/SideNav";
 function App() {
   return (
     <div className="grid lg:grid-cols-12">
-      <div className="border-2 border-slate-r-400 w-fit h-screen">
+      <div className="border-2 border-slate-r-400 w-fit h-screen sticky top-0">
         <SideNav />
       </div>
       <div className="col-span-7 scroll-auto w-100 h-auto">
         <Outlet />
       </div>
-      <div className="border-2 border-indigo-400 col-span-4 h-screen">
+      <div className="border-2 border-indigo-400 col-span-4 h-screen sticky top-0">
         <Map />
       </div>
     </div>

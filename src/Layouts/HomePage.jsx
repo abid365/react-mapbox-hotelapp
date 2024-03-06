@@ -42,7 +42,7 @@ const HomePage = () => {
           </Button>
         </div>
       </div>
-      {/* end of top level text area */}
+      {/* ----------------------------------- */}
       {/* start of action buttons */}
       <div className="pt-5 flex justify-between items-start">
         {/* dropdown actions */}
@@ -113,6 +113,7 @@ const HomePage = () => {
           </DropdownMenu>
         </div>
       </div>
+      {/* ----------------------------------- */}
       {/* search */}
       <div className="pt-3">
         <div className="flex w-full  items-center space-x-2 relative">
@@ -133,6 +134,18 @@ const HomePage = () => {
           </Button>
         </div>
       </div>
+      {/* ----------------------------------- */}
+      {/* sort */}
+      <div className="pt-6 text-slate-700">
+        <Button className="border border-r-0 border-slate-300 text-slate-700 bg-white rounded-r-none h-[34px] shadow-sm hover:text-white">
+          Sort by date
+        </Button>
+        <Button className="border border-l-1 border-slate-300 bg-white text-slate-700 rounded-l-none h-[34px] shadow-sm hover:text-white">
+          Sort by price
+        </Button>
+      </div>
+      {/* ---------------------------------- */}
+      {/* list of hotels */}
     </div>
   );
 };

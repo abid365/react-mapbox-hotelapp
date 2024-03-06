@@ -11,6 +11,7 @@ const data = {
       wifi: true,
       price: "$540 AUD Total",
       reviews: "202",
+      rare: true,
     },
     {
       highlight: "Luxury Loft in CBD",

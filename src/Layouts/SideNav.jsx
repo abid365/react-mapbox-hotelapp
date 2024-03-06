@@ -12,9 +12,13 @@ import { AvatarFallback } from "@radix-ui/react-avatar";
 
 const SideNav = () => {
   return (
-    <div className="pt-10 flex flex-col justify-between items-center min-h-[100vh]">
+    <div className="pt-8 flex flex-col justify-between items-center min-h-[100vh]">
       {/* upper navigations */}
       <div className="px-3 flex flex-col items-center gap-y-6">
+        <div className="border border-[#e2e2e2] rounded-xl p-1 relative">
+          <img className="h-7 w-7" src="/round.png" alt="" />
+          <div className="absolute h-[50%] w-full bg-indigo-400 rounded-b-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 bottom-0 left-0"></div>
+        </div>
         <RiHome6Line className="text-2xl" />
         <HiOutlineChartSquareBar className="text-2xl" />
         <RxLayers className="text-2xl" />

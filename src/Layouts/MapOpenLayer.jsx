@@ -22,14 +22,7 @@ const markers = [
     geocode: [-37.781, 144.926],
     popUp: "Collingwood",
   },
-  {
-    geocode: [-37.797, 145.028],
-    popUp: "Carlton",
-  },
-  {
-    geocode: [-37.807, 144.978],
-    popUp: "East Melbourne",
-  },
+
   {
     geocode: [-37.822, 144.969],
     popUp: "Southbank",
@@ -50,10 +43,7 @@ const markers = [
     geocode: [-37.83, 145.037],
     popUp: "South Yarra",
   },
-  {
-    geocode: [-37.798, 144.946],
-    popUp: "Parkville",
-  },
+
   {
     geocode: [-37.838, 144.882],
     popUp: "West Melbourne",
@@ -97,11 +87,11 @@ const MapOpenLayer = () => {
     <MapContainer
       className="h-[100%]"
       center={[-37.814, 144.962]}
-      zoom={10}
+      zoom={11}
       scrollWheelZoom={true}
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution='<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         url="https://api.maptiler.com/maps/openstreetmap/256/{z}/{x}/{y}@2x.jpg?key=B2YJmNNxhMAGXcYTIf4y"
       />

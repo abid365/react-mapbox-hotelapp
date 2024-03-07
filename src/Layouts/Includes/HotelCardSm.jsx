@@ -16,14 +16,14 @@ const HotelCardSm = ({
   rare,
 }) => {
   return (
-    <div class="max-w-sm rounded-lg overflow-hidden border border-[#e2e2e2] relative">
-      <img class="w-full" src={image} alt="Sunset in the mountains" />
-      <div class="px-6 py-4">
-        <div class="text-sm mb-2 text-slate-400">
+    <div className="max-w-sm rounded-lg overflow-hidden border border-[#e2e2e2] relative">
+      <img className="w-full" src={image} alt="Sunset in the mountains" />
+      <div className="px-6 py-4">
+        <div className="text-sm mb-2 text-slate-400">
           <span className="font-bold text-slate-700 text-xl">${price}</span> AUD
           total
         </div>
-        <p class="text-sm text-purple-400 font-semibold">{heading}</p>
+        <p className="text-sm text-purple-400 font-semibold">{heading}</p>
         <h1 className="font-bold text-slate-500">{titlle}</h1>
         {/* review */}
         <div className="flex gap-x-4 items-center pt-3">
@@ -39,7 +39,7 @@ const HotelCardSm = ({
         </div>
       </div>
 
-      <div class="px-6 pt-2 pb-4">
+      <div className="px-6 pt-2 pb-4">
         <div className="flex gap-x-2 items-center text-slate-700 font-semibold">
           <TiLocationOutline className="inline-block" />
           <span className="text-sm">{location}</span>

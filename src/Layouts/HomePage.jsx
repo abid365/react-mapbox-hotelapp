@@ -24,10 +24,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Card } from "@/components/ui/card";
 import HotelCard from "./Includes/HotelCard";
 import HotelCardSm from "./Includes/HotelCardSm";
 import MapOpenLayer from "./MapOpenLayer";
+import countries from "@/constants/country";
+import DatePickerWithRange from "@/components/ui/DatePickerWithRange";
 
 const HomePage = () => {
   return (
@@ -60,21 +61,21 @@ const HomePage = () => {
               {/* country dropdown */}
               <Select>
                 <SelectTrigger className="w-[140px] h-[40px] border border-slate-300">
-                  <SelectValue placeholder="Select a fruit" />
+                  <SelectValue placeholder="Select Country" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Fruits</SelectLabel>
-                    <SelectItem value="apple">Apple</SelectItem>
-                    <SelectItem value="banana">Banana</SelectItem>
-                    <SelectItem value="blueberry">Blueberry</SelectItem>
-                    <SelectItem value="grapes">Grapes</SelectItem>
-                    <SelectItem value="pineapple">Pineapple</SelectItem>
+                    <SelectLabel>Select One</SelectLabel>
+                    {countries.map((country, i) => (
+                      <SelectItem key={i} value={country.country}>
+                        {`${country.country}` + ` ,` + `${country.code}`}
+                      </SelectItem>
+                    ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
               {/* date range dropdown */}
-              <Select>
+              {/* <Select>
                 <SelectTrigger className="w-[180px] h-[40px] border border-slate-300">
                   <SelectValue placeholder="Select a fruit" />
                 </SelectTrigger>
@@ -88,7 +89,8 @@ const HomePage = () => {
                     <SelectItem value="pineapple">Pineapple</SelectItem>
                   </SelectGroup>
                 </SelectContent>
-              </Select>
+              </Select> */}
+              <DatePickerWithRange />
               {/* pricing dropdown */}
               <Select>
                 <SelectTrigger className="w-[120px] h-[40px] border border-slate-300">

@@ -60,7 +60,7 @@ const HomePage = () => {
             <div className="flex gap-x-5 items-center">
               {/* country dropdown */}
               <Select>
-                <SelectTrigger className="w-[140px] h-[40px] border border-slate-300">
+                <SelectTrigger className="w-[170px] h-[40px] border border-slate-300">
                   <SelectValue placeholder="Select Country" />
                 </SelectTrigger>
                 <SelectContent>
@@ -93,7 +93,7 @@ const HomePage = () => {
               <DatePickerWithRange />
               {/* pricing dropdown */}
               <Select>
-                <SelectTrigger className="w-[120px] h-[40px] border border-slate-300">
+                <SelectTrigger className="w-[180px] h-[40px] border border-slate-300">
                   <SelectValue placeholder="$ Any price" />
                 </SelectTrigger>
                 <SelectContent>

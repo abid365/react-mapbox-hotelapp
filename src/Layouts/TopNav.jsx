@@ -41,7 +41,7 @@ const TopNav = () => {
                   <FiUsers className="text-2xl" />
                 </div>
                 {/* loweer navigations */}
-                <div className="px-3 flex flex-col justify-between items-center gap-y-5 pb-4 mt-auto">
+                <div className="px-3 flex flex-col justify-between items-center gap-y-5 pb-5 mt-auto">
                   <LiaLifeRing className="text-2xl" />
                   <FiSettings className="text-xl" />
 

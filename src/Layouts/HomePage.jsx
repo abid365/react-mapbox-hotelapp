@@ -177,7 +177,7 @@ const HomePage = () => {
       {/* for mobile view */}
 
       <div className="lg:hidden md:hidden  grid grid-cols-1 gap-y-2 px-4">
-        <div className="my-3">
+        <div className="my-3 py-3">
           {/* toplevel text area */}
           <div className="flex flex-col justify-between items-start">
             <div>
@@ -187,7 +187,7 @@ const HomePage = () => {
               <p className="text-sm">{data.desc}</p>
             </div>
             {/* buttons */}
-            <div className="flex gap-x-3 mt-2">
+            <div className="flex gap-x-3 mt-3 pt-2">
               <Button className="text-sm border border-[#e2e2e2] bg-white text-slate-800 hover:text-white px-4">
                 Share
               </Button>

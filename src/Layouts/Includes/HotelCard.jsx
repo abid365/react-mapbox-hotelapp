@@ -3,7 +3,7 @@ import { FaStar, FaRegStar, FaWifi, FaRegHeart } from "react-icons/fa";
 import { TiLocationOutline } from "react-icons/ti";
 import { HiOutlineHome } from "react-icons/hi";
 import Rating from "react-rating";
-import { Card } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 
 const HotelCard = ({
   title,
@@ -18,9 +18,9 @@ const HotelCard = ({
 }) => {
   return (
     <div className="relative">
-      <Card className="p-3 flex items-start gap-x-3">
-        <div>
-          <img className="h-32 w-auto rounded-md" src={image} alt="" />
+      <Card className="p-3 flex  items-start gap-x-3">
+        <div className="lg:block hidden">
+          <img className="h-28 w-auto rounded-md" src={image} alt="" />
         </div>
         <div className="w-full flex-col justify-between">
           <div>
@@ -49,11 +49,11 @@ const HotelCard = ({
                 <TiLocationOutline className="inline-block" />
                 <span className="text-sm">{location}</span>
               </div>
-              <div className="flex gap-x-2 items-center text-slate-700 font-semibold">
+              <div className="lg:flex gap-x-2 items-center text-slate-700 font-semibold   hidden">
                 <HiOutlineHome className="inline-block" />
                 <span className="text-sm">{bed} Bed</span>
               </div>
-              <div className="flex gap-x-2 items-center text-slate-700 font-semibold">
+              <div className="lg:flex gap-x-2 items-center text-slate-700 font-semibold  hideen">
                 <FaWifi className="inline-block" />
                 <span className="text-sm">
                   {wifi ? "WiFi" : "Not Available"}
